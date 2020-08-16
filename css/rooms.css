@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-join{ 
+    height: 100vh;
+    background-color: rgb(17, 16, 16);
+}
+
+
+.page-join header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+}
+
+.page-join header .title-header h1{
+    color: white;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.page-join header .title-header h1 span{
+    color: tomato;
+    font-family: cursive;
+}
+
+.page-join section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+}
+
+.page-join section .title-section h3 {
+    color: white;
+    margin-bottom: 5px;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 50px;
+}
+.page-join section .msg-error p{
+    color:white;
+    background-color: tomato;
+    width: 21rem;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid red;
+    font-family: monospace;
+    font-size: 15px;
+}
+.page-join section form{
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid white;
+    
+}
+
+
+.page-join section form input {
+    border: none;
+    margin-top: 10px;
+    height: 40px;
+    width: 21rem;
+    text-align: center;
+    background-color: honeydew;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 17px;
+}
+
+.page-join section form input:focus{
+    border-bottom: 3px solid rgb(84, 84, 226);
+}
+
+
+.page-join section form button {
+    background-color: rgb(101, 101, 221);
+    height: 33px;
+    width: 21rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.page-join section .form button:hover{
+    background-color: rgb(84, 84, 226);
+}
+
+::placeholder{
+    color: black;
+    opacity: .6;
+}
+
+.page-join footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20%;
+}
+
+.page-join footer .down-footer p{
+    letter-spacing: 1.5px;
+    font-family: 'Text Me One', sans-serif;
+    color: white;
+    opacity: .6;
+    font-size: 12px;
+}
+
+
+
+@media (max-width:800px){
+
+    
+    .page-join footer .down-footer p{
+        font-size: 10px;
+    }
+    .page-join header .title-header h1 {
+        font-size: 40px;
+    }
+}

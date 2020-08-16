@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Rooms</title>
+    <link rel="stylesheet" href="./css/rooms.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    
+
+
+    <div class="page-join">
+        <header>
+            <div class="title-header">
+                <h1><span>C</span>oders <span>C</span>hatting</h1>
+            </div>
+        </header>
+        <section>
+            <div class="title-section">
+                <h3>Join</h3>
+            </div>
+            <div class="msg-error">
+            </div>
+            <form>
+                <input id="nickname" type="text" name="nickname" placeholder="Nickname">
+                <input id="room" type="text" name="room" placeholder="Room">
+                <button type="submit" class="btn-join">Join</button>
+            </form>
+        </section>
+        <footer>
+            <div class="down-footer">
+                <p>
+                     CopyRight© 2020 Created and Coded By <strong>Issam Lahlou</strong> and <strong>Wadie hafidi</strong> all Rights Reserved.
+                </p>  
+            </div>
+        </footer>
+    </div>
+    <div class="page-chat">
+        <header>
+            <div class="title-header">
+                <h1><span>C</span>oders <span>C</span>hatting</h1>
+            </div>
+        </header>
+    
+          <!-- Start section -->
+    
+        <section>
+            <div class="chat-box">
+                <div class="head-chat">
+                    <div class="name-room"><span>*</span><h3>name room</h3></div>
+                    <div class="close-room">
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                    </div>
+                </div>
+                <div class="section-chat">
+                    <ul class="messages">
+    
+                    </ul>
+                </div>
+                <div class="footer-chat">
+                    <input type="text" placeholder="Type a message...">
+                    <button>Send</button>
+                </div>
+            </div>
+        </section>
+    
+          <!-- End section  -->
+    
+    
+        <footer>
+            <div class="down-footer">
+                <p>
+                     CopyRight© 2020 Created and Coded By <strong>Issam Lahlou</strong> and <strong>Wadie hafidi</strong> all Rights Reserved.
+                </p>  
+            </div>
+        </footer>
+    </div>
+
+     <!-- my script -->
+     <script src="./js/main.js"></script>
+</body>
+</html>

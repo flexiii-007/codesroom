@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-chat{ 
+    height: 100vh;
+    background-color: rgb(17, 16, 16);
+    display: none;
+}
+
+
+.page-chat header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+}
+
+.page-chat header .title-header h1{
+    color: white;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.page-chat header .title-header h1 span{
+    color: tomato;
+    font-family: cursive;
+}
+
+
+/* Start section */
+
+
+.page-chat section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+.page-chat section .chat-box{
+    width: 30rem;
+}
+
+.page-chat section .chat-box .head-chat{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(51, 51, 223);
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-chat section .chat-box .head-chat .name-room{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.page-chat section .chat-box .head-chat .name-room span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.page-chat section .chat-box .head-chat .name-room h3{
+    margin-bottom: 5px;
+    color: white;
+}
+
+.page-chat section .chat-box .head-chat .close-room{
+    position: relative;
+    cursor: pointer;
+}
+
+.page-chat section .chat-box .head-chat .close-room div{
+    background-color: white;
+    height: 15px;
+    width: 3px;
+}
+
+.page-chat section .chat-box .head-chat .close-room #line1{
+    position: relative;
+    right: 15px;
+    bottom: -5px;
+    transform:rotateZ(50deg)
+}
+.page-chat section .chat-box .head-chat .close-room #line2{
+    position: relative;
+    right: 15px;
+    top:-10px;
+    transform:rotateZ(-50deg)
+}
+
+
+.page-chat section .chat-box .section-chat{
+    background-color: white;
+    height: 350px;
+}
+
+.page-chat section .chat-box .footer-chat{
+    background-color: rgb(51, 51, 223);
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+}
+
+.page-chat section .chat-box .footer-chat input{
+height: 30px;
+width: 26rem;
+outline: none;
+padding-left: 5px;
+font-size: 14px;
+border-radius: 5px;
+
+}
+
+.page-chat section .chat-box .footer-chat button{
+outline: none;
+border: none;
+height: 30px;
+width: 3.2rem;
+cursor: pointer;
+background-color: rgb(226, 226, 241);
+font-family: 'Text Me One', sans-serif;
+border-radius: 5px;
+}
+
+.page-chat section .chat-box .footer-chat button:hover{
+    background-color: rgb(113, 113, 207);
+}
+
+ul {
+    list-style: none;
+    word-wrap: break-word;
+}
+.messages {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.messages .msg-left{
+    align-self: flex-start;
+    background-color: rgb(216, 214, 214);
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    line-break: anywhere;
+}
+.messages .msg-right{
+    align-self: flex-end;
+    background-color: rgb(40, 120, 224);
+    color: white;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    line-break: anywhere;
+}
+.messages .msg-center{
+    align-self: center;
+    background-color: rgb(216, 214, 214);
+    padding: 5px;
+    border-radius: 10px;
+    line-break: anywhere;
+}
+
+.messages .admin-center{
+    align-self: center;
+    color: grey;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.messages .username-left{
+    align-self: flex-start;
+    color: grey;
+    padding: 5px;
+    font-size: 10px;
+}
+.messages .typing{
+    align-self: flex-start;
+    color: grey;
+    padding: 5px;
+    font-size: 10px;
+    line-break: anywhere;
+}
+.messages .username-right{
+    align-self: flex-end;
+    color: grey;
+    padding: 5px;
+    font-size: 10px
+}
+/* End sction */
+
+
+.page-chat footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10%;
+}
+
+.page-chat footer .down-footer p{
+    letter-spacing: 1.5px;
+    font-family: 'Text Me One', sans-serif;
+    color: white;
+    opacity: .6;
+    font-size: 12px;
+}
+
+
+
+
+
+@media (max-width:800px){
+
+    
+    .page-chat footer .down-footer p{
+        font-size: 10px;
+    }
+    .page-chat header .title-header h1 {
+        font-size: 40px;
+    }
+}
